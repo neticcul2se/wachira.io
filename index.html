@@ -2,94 +2,47 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title> Wachira Ouyporn</title>
-<meta property="og:image"
-content="https://z-1-scontent.fbkk2-1.fna.fbcdn.net/hphotos-xap1/t31.0-8/s960x960/1279007_702656999748411_1448148170_o.jpg" />
-   <meta property="og:description"
-content="My self it test resume online " />
+    <title> @ Me</title>
+
     <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.indigo-pink.min.css">
  <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+ <link rel="stylesheet" href="mcss.css">
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
 
-<style>
+<script>
+var myCenter=new google.maps.LatLng(12.379516, 102.382534);
 
-.layout-transparent {
-background-color: #43C6DB;
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:14,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+
+var infowindow = new google.maps.InfoWindow({
+  content:"Contect Me ^ ^"
+  });
+
+google.maps.event.addListener(marker, 'click', function() {
+  infowindow.open(map,marker);
+  });
+
 }
-.layout-transparent .mdl-layout__header,
-.layout-transparent .mdl-layout__drawer-button {
-/* This background is dark, so we set text to white. Use 87% black instead if
- your background is light. */
-color:whire;
-}
 
-.mdl-location{
-
-
-    padding: 1px;
-
-}
-  .demo-card-wide.mdl-card {
-    width: 800px;
-  }
-  .mdl-card__title {
-    color:  #157DEC;
-    height: 70px;
-
-
-  }
-  .demo-card-wide > .mdl-card__menu {
-    color:  #157DEC;
-  }
-
-
-  .demo-card-image.mdl-card {
-    width: 256px;
-       height: 256px;
-    background: url('https://z-1-scontent.fbkk2-1.fna.fbcdn.net/hphotos-xap1/t31.0-8/s960x960/1279007_702656999748411_1448148170_o.jpg') center / cover;
-  }
-  .demo-card-image > .mdl-card__actions {
-   height: 52px;
-   padding: 16px;
-   background: rgba(0, 0, 0, 0.2);
- }
- .demo-card-image__filename {
-   color: #fff;
-   font-size: 14px;
-   font-weight: 400;
- }
- .mdl_main{
-   margin-left: auto;
-   margin-right: auto;
-   width: auto;
- overflow: visible;
- }
- .mdl-skill{
-
-   float: left;
- }
- .skill {
-float: left;
-width: 33.33%;
-
- }
- .mdl-me{
-   float: left;
-     width: 800px;
- }
- .mdl-cont1{
-  float: left;
-  width: 35%;
- }
- .mdl-cont2{
-  float: left;
-  width: 65%;
- }
- b{
-   color: #FFA62F;
-   font-size: 1.2em;
- }
-</style>
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
   </head>
   <body>
     <!-- Always shows a header, even in smaller screens. -->
@@ -140,8 +93,7 @@ width: 33.33%;
 
               TEL : 0876067726 <br>
               LINE : cul2se <br>
-              FB: www.fb.com/cul2se <br>
-              Everybody is man but Every not same</h6>
+              FB: www.fb.com/cul2se </h6>
 
         </div>
 
@@ -150,7 +102,7 @@ width: 33.33%;
 
 </div>
     </div>    <div class="mdl-card__actions mdl-card--border">
-    <a  href="https://www.facebook.com/Cul2se" target="_blank" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" >
+     <a  href="https://www.facebook.com/Cul2se" target="_blank" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" >
    Facebook
     </a>
     <a  href="https://www.twitter.com/Cul2se" target="_blank" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
@@ -241,8 +193,19 @@ width: 33.33%;
 
       </div>
 
+
+      <div class="page-content mdl-location">
+
+        <div class="mdl-card mdl-shadow--2dp demo-card-wide">
+    <div class="mdl-card__title">
+      <h2 class="mdl-card__title-text">Location</h2>
+    </div>
+    <div class="mdl-card__supporting-text">
+  <div id="googleMap" style="width:950px;height:270px;"></div>
+
+      </div>
+
     </main>
   </div>
   </body>
 </html>
-
