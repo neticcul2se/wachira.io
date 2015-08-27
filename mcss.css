@@ -1,0 +1,78 @@
+
+.layout-transparent {
+background-color: #43C6DB;
+}
+.layout-transparent .mdl-layout__header,
+.layout-transparent .mdl-layout__drawer-button {
+/* This background is dark, so we set text to white. Use 87% black instead if
+ your background is light. */
+color:whire;
+}
+
+.mdl-location{
+
+
+    padding: 1px;
+
+}
+  .demo-card-wide.mdl-card {
+    width: 800px;
+  }
+  .mdl-card__title {
+    color:  #157DEC;
+    height: 70px;
+
+
+  }
+  .demo-card-wide > .mdl-card__menu {
+    color:  #157DEC;
+  }
+
+
+  .demo-card-image.mdl-card {
+    width: 256px;
+       height: 256px;
+    background: url('https://z-1-scontent.fbkk2-1.fna.fbcdn.net/hphotos-xap1/t31.0-8/s960x960/1279007_702656999748411_1448148170_o.jpg') center / cover;
+  }
+  .demo-card-image > .mdl-card__actions {
+   height: 52px;
+   padding: 16px;
+   background: rgba(0, 0, 0, 0.2);
+ }
+ .demo-card-image__filename {
+   color: #fff;
+   font-size: 14px;
+   font-weight: 400;
+ }
+ .mdl_main{
+   margin-left: auto;
+   margin-right: auto;
+   width: auto;
+ overflow: visible;
+ }
+ .mdl-skill{
+
+   float: left;
+ }
+ .skill {
+float: left;
+width: 33.33%;
+
+ }
+ .mdl-me{
+   float: left;
+     width: 800px;
+ }
+ .mdl-cont1{
+  float: left;
+  width: 35%;
+ }
+ .mdl-cont2{
+  float: left;
+  width: 65%;
+ }
+ b{
+   color: #FFA62F;
+   font-size: 1.2em;
+ }   
+ 
